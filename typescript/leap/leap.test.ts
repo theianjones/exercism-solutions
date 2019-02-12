@@ -17,11 +17,19 @@ describe('A leap year', () => {
   it('is reintroduced every 400 years to adjust another day', () => {
     expect(isLeapYear(2000)).toBeTruthy()
   })
+  
+  it('is reintroduced every 400 years to adjust another day', () => {
+    expect(isLeapYear(2012)).toBeTruthy()
+  })
 
   describe('Additional example of a leap year that', () => {
 
     it('is not a leap year', () => {
       expect(isLeapYear(1978)).toBeFalsy()
+    })
+    
+    it('is not a leap year', () => {
+      expect(isLeapYear(1800)).toBeFalsy()
     })
 
     it('is a common leap year', () => {
